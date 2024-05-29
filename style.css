@@ -1,0 +1,251 @@
+:root{
+    --a-bg: #ff6347;
+    --b-bg: #0a0a0a;
+    --w-bg: #ffffff;
+    --p1-bg: #F1F1F1;
+    --p2-bg: #616161;
+    --t: #dacece;
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+}
+
+p{
+    font-size: medium;
+    text-align: justify;
+}
+/* left contaniner start */
+
+.left-contanier{
+    width: 90em;
+    height: 100%;
+}
+
+.header-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: var(--w-bg);
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    align-self: flex-start;
+    background-color: var(--a-bg);
+    padding: 115px 130px 70px 35px;
+}
+
+.header h1{
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.header-container .Packages{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nav li{
+    padding: 10px 0px;
+}
+.nav a{
+    color: var(--w-bg);
+    text-decoration: none;
+    font-size: 23px;
+    
+    
+}
+
+/* left container end */
+
+/* right container start  */
+
+.right-contanier{
+    margin: 110px 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.container-header{
+    padding-bottom: 20px;
+}
+
+.container-header h1{
+    font-size: 70px;
+}
+
+/* titel-text css */
+.title-text{
+    color: var(--a-bg);
+    font-size: 50px;
+    padding: 20px 0px;
+}
+
+/* bottom-border css */
+.bottom-border {
+    width: 50px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: var(--a-bg);
+    margin: 20px 0px;
+}
+
+/* Showcase-containner image section start */
+.Showcase-containner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.Showcase-containner img{
+    width: 100%;
+}
+/* Showcase-containner image section end  */
+
+/* designer-container css start  */
+.designer{
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.designer-profile{
+    background-color: var(--p1-bg);
+}
+.des-image{
+    width: 100%;
+}
+
+.desi-desc{
+    padding: 20px;
+}
+
+.desi-desc h1{
+    text-transform: capitalize;
+}
+
+.desi-desc h4{
+    padding: 15px 0px;
+    color: #bfb9b9c7;
+}
+/* designer-containner end  */
+
+/* packages-containner css */
+#p4 .packages{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-self: start;
+}
+
+.packages ul{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.packages ul li{
+    text-align: center;
+    font-size: 20px;
+    border-bottom: 2px solid var(--t);
+    padding: 15px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.basic-table, .pro-table{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 5px;
+    width: 100%;
+    background-color: var(--p1-bg)    
+}
+
+.headline-basic{
+    font-size: 25px !important;
+    height: 60px;
+    align-content: center;
+    color: var(--w-bg);
+    background-color: var(--p2-bg)
+}
+
+.headline-pro{
+    font-size: 25px !important;
+    height: 60px;
+    align-content: center;
+    color: var(--w-bg);
+    background-color: var(--a-bg)
+}
+
+#b-plus-minus, #p-plus-minus{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    font-size: 40px !important;
+
+}
+
+#broom, #proom{
+    color: var(--t);
+}
+
+.signup-btn{
+    background-color: var(--w-bg);
+    color: var(--b-bg);
+    padding: 10px 30px;
+    border: none;
+    font-size: large;
+}
+
+#psignup{
+    background-color: var(--a-bg);
+    color: var(--w-bg);
+}
+
+/* contact- containner start */
+
+label{
+    font-size: large;
+}
+
+input{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+.btn-s{
+    background-color: #f44336;
+    color: white;
+    width: 100%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: large;
+}
+/* contact-containner end  */
+
+/* footrt section  */
+footer div{
+    height: 80px;
+    background-color: var(--p1-bg);
+}
+/* end  */
