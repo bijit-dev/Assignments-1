@@ -15,8 +15,6 @@
 
 #main{
     display: flex;
-    justify-content: center;
-    align-items: stretch;
     gap: 20px;
 }
 
@@ -28,23 +26,23 @@ p{
 
 .left-contanier{
     width: 90em;
-    height: 100%;
+    height: 100;
+    background-color: var(--a-bg);
+    position: relative;
 }
 
 .header-container{
     position: fixed;
-    top: 0;
-    left: 0;
-    color: var(--w-bg);
+    top: 130px;
+    left: 60px;
     display: flex;
     flex-direction: column;
-    gap: 70px;
     align-self: flex-start;
-    background-color: var(--a-bg);
-    padding: 115px 130px 70px 35px;
+    gap: 70px;
 }
 
 .header h1{
+    color: var(--w-bg);
     font-size: 30px;
     font-weight: bolder;
 }
