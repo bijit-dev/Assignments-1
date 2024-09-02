@@ -4,9 +4,16 @@ const plusButton = document.querySelector('#bplus');
 const minusButton = document.querySelector('#bminus');
 const roomCount = document.querySelector('#broom');
 const price = document.querySelector('#brate');
-
 const signupButton = document.querySelector('#bsignup');
-const thankYouMessage = document.querySelector('.thanks');
+const message = document.querySelector('.thanks');
+
+const plusButtonp = document.querySelector('#pplus');
+const minusButtonp = document.querySelector('#pminus');
+const roomCountp = document.querySelector('#proom');
+const pricep = document.querySelector('#prate');
+const btn = document.querySelector('#psignup')
+const message2 = document.querySelector('.message');
+
 
 let count = 1;
 let currentPrice = 199;
@@ -30,11 +37,6 @@ minusButton.addEventListener('click', () => {
 
 
 // ---- Pro package section start -------
-
-const plusButtonp = document.querySelector('#pplus');
-const minusButtonp = document.querySelector('#pminus');
-const roomCountp = document.querySelector('#proom');
-const pricep = document.querySelector('#prate');
 
 let countp = 1;
 let currentPricep = 249;
@@ -61,6 +63,13 @@ minusButtonp.addEventListener('click', () => {
 
 
 signupButton.addEventListener('click', () => {
-    thankYouMessage.style.display = 'block';
-    thankYouMessage.style.color = '#c4b99b';
+    message.style.display = 'block';
+    message.style.color = '#c4b99b';
+    message.innerHTML = `Thank you for choosing ${count} room`
+}); 
+
+btn.addEventListener('click', () => {
+    message2.style.display = 'block';
+    message2.style.color = '#c4b99b';
+    message2.innerHTML = `Thank you for choosing ${countp} room`
 }); 
