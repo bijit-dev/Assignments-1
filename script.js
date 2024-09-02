@@ -5,6 +5,9 @@ const minusButton = document.querySelector('#bminus');
 const roomCount = document.querySelector('#broom');
 const price = document.querySelector('#brate');
 
+const signupButton = document.querySelector('#bsignup');
+const thankYouMessage = document.querySelector('.thanks');
+
 let count = 1;
 let currentPrice = 199;
 
@@ -56,8 +59,6 @@ minusButtonp.addEventListener('click', () => {
 
 // basic sign up js
 
-const signupButton = document.querySelector('#bsignup');
-const thankYouMessage = document.querySelector('.thanks');
 
 signupButton.addEventListener('click', () => {
     thankYouMessage.style.display = 'block';

@@ -172,7 +172,7 @@ p{
     background-color: var(--p1-bg)    
 }
 
-.headline-basic{
+.headline{
     font-size: 25px !important;
     height: 60px;
     align-content: center;
@@ -180,11 +180,11 @@ p{
     background-color: var(--p2-bg)
 }
 
-.headline-pro{
-    font-size: 25px !important;
-    height: 60px;
-    align-content: center;
-    color: var(--w-bg);
+.basic-table:hover .headline{
+    background-color: var(--a-bg)
+}
+
+.pro-table:hover .headline{
     background-color: var(--a-bg)
 }
 
@@ -217,7 +217,7 @@ p{
     font-size: large;
 }
 
-#psignup{
+.signup-btn:hover{
     background-color: var(--a-bg);
     color: var(--w-bg);
 }
